@@ -1,0 +1,25 @@
+<script>
+    function click1(){
+    var here = document.getElementById("here");
+    here.innerHTML = parseInt(Math.random()*49+1);
+    }
+    function test1(username){
+    var here = document.getElementById("here");
+    here.innerHTML = "Hello," + username;
+    }
+     function test2(){
+        //var here = document.getElementById('here');
+        var username = document.getElementById('username');
+        here.innerHTML = username.value;
+        brad.showUrName(username.value);
+        }
+</script>
+<h1>Handmade Soap Company</h1>
+<hr/>
+Welcome!<br>
+<input type="button" style="background-color:yellow" onclick="click1()" value="click"><br>
+<input type="button" style="background-color:yellow" onclick="test1('Christ')" value="test1"><br>
+<input type='text' id='username' />
+<input type='button' onclick='test2()' value="Click3" /><br />
+<div id="here"></div>
+<a href = "http://google.com">search</a>
